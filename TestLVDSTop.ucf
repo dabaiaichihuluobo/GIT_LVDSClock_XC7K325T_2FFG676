@@ -1,0 +1,25 @@
+#clk_p和clk_n在bank 33测试
+NET "clk_p" 			LOC 					= AB11 	|IOSTANDARD=LVDS;
+NET "clk_n" 			LOC 					= AC11 	|IOSTANDARD=LVDS;
+NET "rst_n" 			LOC 					= A10 	|IOSTANDARD=LVCMOS33;
+NET "led_h" 			LOC 					= A15 	|IOSTANDARD=LVCMOS33;
+
+INST clk_diff_to_single_inst DIFF_TERM ="TRUE";
+
+#bank 15测试
+#会报错，ERROR:Pack:1107 - Pack was unable to combine the symbols listed below into a
+#   single IOB18 component because the site type selected is not compatible. 
+#NET "clk_p" 			LOC 					= F17 	|IOSTANDARD=LVDS;
+#NET "clk_n" 			LOC 					= E17 	|IOSTANDARD=LVDS;
+#NET "rst_n" 			LOC 					= A10 	|IOSTANDARD=LVCMOS33;
+#NET "led_h" 			LOC 					= A15 	|IOSTANDARD=LVCMOS33;
+
+#bank 15测试；用同样的bank内的引脚作为rst_n和led_h
+#仍然报错，ERROR:Pack:1107 - Pack was unable to combine the symbols listed below into a
+#   single IOB18 component because the site type selected is not compatible. 
+#
+#NET "clk_p" 			LOC 					= F17 	|IOSTANDARD=LVDS;
+#NET "clk_n" 			LOC 					= E17 	|IOSTANDARD=LVDS;
+#NET "rst_n" 			LOC 					= K17 	|IOSTANDARD=LVCMOS33;
+#NET "led_h" 			LOC 					= M17 	|IOSTANDARD=LVCMOS33;
+

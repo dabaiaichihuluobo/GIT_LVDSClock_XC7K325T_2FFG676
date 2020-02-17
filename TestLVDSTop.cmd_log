@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "F:/codetemp/TestLVDSClock_676/TestLVDSTop.xst" -ofn "F:/codetemp/TestLVDSClock_676/TestLVDSTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TestLVDSTop.ucf -p xc7k325t-fbg676-2 TestLVDSTop.ngc TestLVDSTop.ngd  
+map -intstyle ise -p xc7k325t-fbg676-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TestLVDSTop_map.ncd TestLVDSTop.ngd TestLVDSTop.pcf 
+xst -intstyle ise -ifn "F:/codetemp/TestLVDSClock_676/TestLVDSTop.xst" -ofn "F:/codetemp/TestLVDSClock_676/TestLVDSTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TestLVDSTop.ucf -p xc7k325t-fbg676-2 TestLVDSTop.ngc TestLVDSTop.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TestLVDSTop.ucf -p xc7k325t-fbg676-2 TestLVDSTop.ngc TestLVDSTop.ngd  
+map -intstyle ise -p xc7k325t-fbg676-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TestLVDSTop_map.ncd TestLVDSTop.ngd TestLVDSTop.pcf 
+par -w -intstyle ise -ol high -mt off TestLVDSTop_map.ncd TestLVDSTop.ncd TestLVDSTop.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml TestLVDSTop.twx TestLVDSTop.ncd -o TestLVDSTop.twr TestLVDSTop.pcf -ucf TestLVDSTop.ucf 
+bitgen -intstyle ise -f TestLVDSTop.ut TestLVDSTop.ncd 

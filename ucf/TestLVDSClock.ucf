@@ -1,0 +1,7 @@
+#NET "clk_sys" TNM_NET = clk_sys;
+#TIMESPEC TS_clk_sys = PERIOD "clk_sys" 16.368 MHz HIGH 50%;
+
+NET "clk_p" 			LOC 					= AD12 	|IOSTANDARD=LVDS;
+#NET "clk_n" 			LOC 					= AD11 	|IOSTANDARD=LVCMOS33;
+NET "rst_n" 			LOC 					= C16 	|IOSTANDARD=LVCMOS33;
+NET "led_h" 			LOC 					= F18 	|IOSTANDARD=LVCMOS33;

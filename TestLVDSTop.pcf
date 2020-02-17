@@ -1,0 +1,11 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Feb 17 21:43:28 2020
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk_n" LOCATE = SITE "AC11" LEVEL 1;
+COMP "clk_p" LOCATE = SITE "AB11" LEVEL 1;
+COMP "rst_n" LOCATE = SITE "A10" LEVEL 1;
+COMP "led_h" LOCATE = SITE "A15" LEVEL 1;
+SCHEMATIC END;
+
