@@ -37,7 +37,7 @@ Setup/Hold to clock clk_n
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-rst_n       |    6.514(R)|      SLOW  |   -2.242(R)|      FAST  |clk16P368         |   0.000|
+rst_n       |    5.826(R)|      SLOW  |   -2.304(R)|      FAST  |clk20M            |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Setup/Hold to clock clk_p
@@ -45,7 +45,7 @@ Setup/Hold to clock clk_p
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-rst_n       |    6.514(R)|      SLOW  |   -2.242(R)|      FAST  |clk16P368         |   0.000|
+rst_n       |    5.826(R)|      SLOW  |   -2.304(R)|      FAST  |clk20M            |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock clk_n to Pad
@@ -53,7 +53,7 @@ Clock clk_n to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-led_h       |         4.111(R)|      SLOW  |         2.196(R)|      FAST  |clk16P368         |   0.000|
+led_h       |         3.668(R)|      SLOW  |         1.917(R)|      FAST  |clk20M            |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock clk_p to Pad
@@ -61,7 +61,7 @@ Clock clk_p to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-led_h       |         4.111(R)|      SLOW  |         2.196(R)|      FAST  |clk16P368         |   0.000|
+led_h       |         3.668(R)|      SLOW  |         1.917(R)|      FAST  |clk20M            |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk_n
@@ -69,8 +69,8 @@ Clock to Setup on destination clock clk_n
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk_n          |    1.866|         |         |         |
-clk_p          |    1.866|         |         |         |
+clk_n          |    1.785|         |         |         |
+clk_p          |    1.785|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk_p
@@ -78,12 +78,12 @@ Clock to Setup on destination clock clk_p
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk_n          |    1.866|         |         |         |
-clk_p          |    1.866|         |         |         |
+clk_n          |    1.785|         |         |         |
+clk_p          |    1.785|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Thu Feb 20 15:55:15 2020 
+Analysis completed Sat Feb 22 09:23:14 2020 
 --------------------------------------------------------------------------------
 
 Trace Settings:

@@ -71,7 +71,7 @@ module clkGenerator_tb ();
   // how many cycles to run
   localparam  COUNT_PHASE = 1024;
   // we'll be using the period in many locations
-  localparam time PER1    = 61.094*ONE_NS;
+  localparam time PER1    = 50.000*ONE_NS;
   localparam time PER1_1  = PER1/2;
   localparam time PER1_2  = PER1 - PER1/2;
 
@@ -88,11 +88,11 @@ wire [2:1] CLK_OUT;
 //Freq Check using the M & D values setting and actual Frequency generated
 real period1;
 real ref_period1;
-localparam  ref_period1_clkin1 = (61.094*1*60.000*1000/60.000);
+localparam  ref_period1_clkin1 = (50.000*1*48.000*1000/48.000);
 time prev_rise1;
 real period2;
 real ref_period2;
-localparam  ref_period2_clkin1 = (61.094*1*15*1000/60.000);
+localparam  ref_period2_clkin1 = (50.000*1*12*1000/48.000);
 time prev_rise2;
 
 
