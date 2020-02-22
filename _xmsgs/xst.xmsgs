@@ -5,13 +5,70 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"F:\codetemp\TestLVDSClock_676\src\TestLVDSTop.v" Line 50: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"F:\GIT_LVDSClock_XC7K325T_2FFG676\ipcore_dir\clkGenerator.v" Line 130: Assignment to <arg fmt="%s" index="1">clkfboutb_unused</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">cnt_14</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TestLVDSTop</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"F:\GIT_LVDSClock_XC7K325T_2FFG676\ipcore_dir\clkGenerator.v" Line 132: Assignment to <arg fmt="%s" index="1">clkout0b_unused</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">cnt_15</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TestLVDSTop</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"F:\GIT_LVDSClock_XC7K325T_2FFG676\ipcore_dir\clkGenerator.v" Line 134: Assignment to <arg fmt="%s" index="1">clkout1b_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"F:\GIT_LVDSClock_XC7K325T_2FFG676\ipcore_dir\clkGenerator.v" Line 135: Assignment to <arg fmt="%s" index="1">clkout2_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"F:\GIT_LVDSClock_XC7K325T_2FFG676\ipcore_dir\clkGenerator.v" Line 136: Assignment to <arg fmt="%s" index="1">clkout2b_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"F:\GIT_LVDSClock_XC7K325T_2FFG676\ipcore_dir\clkGenerator.v" Line 137: Assignment to <arg fmt="%s" index="1">clkout3_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"F:\GIT_LVDSClock_XC7K325T_2FFG676\ipcore_dir\clkGenerator.v" Line 138: Assignment to <arg fmt="%s" index="1">clkout3b_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"F:\GIT_LVDSClock_XC7K325T_2FFG676\ipcore_dir\clkGenerator.v" Line 139: Assignment to <arg fmt="%s" index="1">clkout4_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"F:\GIT_LVDSClock_XC7K325T_2FFG676\ipcore_dir\clkGenerator.v" Line 140: Assignment to <arg fmt="%s" index="1">clkout5_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"F:\GIT_LVDSClock_XC7K325T_2FFG676\ipcore_dir\clkGenerator.v" Line 141: Assignment to <arg fmt="%s" index="1">clkout6_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"F:\GIT_LVDSClock_XC7K325T_2FFG676\ipcore_dir\clkGenerator.v" Line 153: Assignment to <arg fmt="%s" index="1">do_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"F:\GIT_LVDSClock_XC7K325T_2FFG676\ipcore_dir\clkGenerator.v" Line 154: Assignment to <arg fmt="%s" index="1">drdy_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"F:\GIT_LVDSClock_XC7K325T_2FFG676\ipcore_dir\clkGenerator.v" Line 160: Assignment to <arg fmt="%s" index="1">psdone_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"F:\GIT_LVDSClock_XC7K325T_2FFG676\ipcore_dir\clkGenerator.v" Line 163: Assignment to <arg fmt="%s" index="1">clkinstopped_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"F:\GIT_LVDSClock_XC7K325T_2FFG676\ipcore_dir\clkGenerator.v" Line 164: Assignment to <arg fmt="%s" index="1">clkfbstopped_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"F:\GIT_LVDSClock_XC7K325T_2FFG676\src\TestLVDSTop.v" Line 45: Assignment to <arg fmt="%s" index="1">clk65P472</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"F:\GIT_LVDSClock_XC7K325T_2FFG676\src\TestLVDSTop.v" Line 48: Assignment to <arg fmt="%s" index="1">LOCKED</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"F:\GIT_LVDSClock_XC7K325T_2FFG676\src\TestLVDSTop.v" Line 65: Result of <arg fmt="%d" index="1">27</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">26</arg>-bit target.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">F:\GIT_LVDSClock_XC7K325T_2FFG676\src\TestLVDSTop.v</arg>&quot; line <arg fmt="%s" index="2">40</arg>: Output port &lt;<arg fmt="%s" index="3">CLK_OUT2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">clk_gen_inst</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">F:\GIT_LVDSClock_XC7K325T_2FFG676\src\TestLVDSTop.v</arg>&quot; line <arg fmt="%s" index="2">40</arg>: Output port &lt;<arg fmt="%s" index="3">LOCKED</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">clk_gen_inst</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">cnt_24</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TestLVDSTop</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">cnt_25</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TestLVDSTop</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 </messages>

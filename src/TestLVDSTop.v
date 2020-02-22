@@ -33,11 +33,26 @@ IBUFGDS clk_diff_to_single_inst(
 	.I(clk_p),
 	.IB(clk_n));
 
+wire clk16P368;
+wire clk65P472;
+wire LOCKED;
+
+clkGenerator clk_gen_inst
+   (// Clock in ports
+    .CLK_IN1(clk_diff_to_single),      // IN
+    // Clock out ports
+    .CLK_OUT1(clk16P368),     // OUT
+    .CLK_OUT2(clk65P472),     // OUT
+    // Status and control signals
+    .RESET(!rst_n),// IN
+    .LOCKED(LOCKED));      // OUT
+	
+	
 //正常逻辑，计时跑马灯
 reg [25:0] cnt = 0;
 reg led_o_r = 0;
 
-always @ (posedge clk_diff_to_single or negedge rst_n) begin
+always @ (posedge clk16P368 or negedge rst_n) begin
 	if (!rst_n)begin
 		cnt <= 0;
 	end

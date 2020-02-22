@@ -1,1 +1,2 @@
+verilog work "ipcore_dir/clkGenerator.v"
 verilog work "src/TestLVDSTop.v"

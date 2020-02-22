@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-02-17T15:38:35</DateModified>
+  <DateModified>2020-02-20T09:17:44</DateModified>
   <ModuleName>TestLVDSTop</ModuleName>
   <SummaryTimeStamp>2020-02-17T15:36:56</SummaryTimeStamp>
-  <SavedFilePath>F:/codetemp/TestLVDSClock_676/iseconfig/TestLVDSTop.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>F:/codetemp/TestLVDSClock_676\</ImplementationReportsDirectory>
+  <SavedFilePath>F:/GIT_LVDSClock_XC7K325T_2FFG676/iseconfig/TestLVDSTop.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>F:/GIT_LVDSClock_XC7K325T_2FFG676\</ImplementationReportsDirectory>
   <DateInitialized>2020-02-13T14:38:25</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

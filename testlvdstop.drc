@@ -1,7 +1,7 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Mon Feb 17 21:45:47 2020
+Thu Feb 20 15:55:40 2020
 
 drc -z TestLVDSTop.ncd TestLVDSTop.pcf
 

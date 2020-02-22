@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.24 secs
+Total CPU time to Xst completion: 0.33 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.24 secs
+Total CPU time to Xst completion: 0.33 secs
  
 --> Reading design: TestLVDSTop.prj
 
@@ -99,13 +99,18 @@ DSP48 Utilization Ratio            : 100
 Auto BRAM Packing                  : NO
 Slice Utilization Ratio Delta      : 5
 
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
 =========================================================================
 
 
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "F:\codetemp\TestLVDSClock_676\src\TestLVDSTop.v" into library work
+Analyzing Verilog file "F:\GIT_LVDSClock_XC7K325T_2FFG676\ipcore_dir\clkGenerator.v" into library work
+Parsing module <clkGenerator>.
+Analyzing Verilog file "F:\GIT_LVDSClock_XC7K325T_2FFG676\src\TestLVDSTop.v" into library work
 Parsing module <TestLVDSTop>.
 
 =========================================================================
@@ -115,34 +120,65 @@ Parsing module <TestLVDSTop>.
 Elaborating module <TestLVDSTop>.
 
 Elaborating module <IBUFGDS>.
-WARNING:HDLCompiler:413 - "F:\codetemp\TestLVDSClock_676\src\TestLVDSTop.v" Line 50: Result of 17-bit expression is truncated to fit in 16-bit target.
+
+Elaborating module <clkGenerator>.
+
+Elaborating module <MMCME2_ADV(BANDWIDTH="OPTIMIZED",CLKOUT4_CASCADE="FALSE",COMPENSATION="ZHOLD",STARTUP_WAIT="FALSE",DIVCLK_DIVIDE=1,CLKFBOUT_MULT_F=60.0,CLKFBOUT_PHASE=0.0,CLKFBOUT_USE_FINE_PS="FALSE",CLKOUT0_DIVIDE_F=60.0,CLKOUT0_PHASE=0.0,CLKOUT0_DUTY_CYCLE=0.5,CLKOUT0_USE_FINE_PS="FALSE",CLKOUT1_DIVIDE=15,CLKOUT1_PHASE=0.0,CLKOUT1_DUTY_CYCLE=0.5,CLKOUT1_USE_FINE_PS="FALSE",CLKIN1_PERIOD=61.094,REF_JITTER1=0.01)>.
+WARNING:HDLCompiler:1127 - "F:\GIT_LVDSClock_XC7K325T_2FFG676\ipcore_dir\clkGenerator.v" Line 130: Assignment to clkfboutb_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\GIT_LVDSClock_XC7K325T_2FFG676\ipcore_dir\clkGenerator.v" Line 132: Assignment to clkout0b_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\GIT_LVDSClock_XC7K325T_2FFG676\ipcore_dir\clkGenerator.v" Line 134: Assignment to clkout1b_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\GIT_LVDSClock_XC7K325T_2FFG676\ipcore_dir\clkGenerator.v" Line 135: Assignment to clkout2_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\GIT_LVDSClock_XC7K325T_2FFG676\ipcore_dir\clkGenerator.v" Line 136: Assignment to clkout2b_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\GIT_LVDSClock_XC7K325T_2FFG676\ipcore_dir\clkGenerator.v" Line 137: Assignment to clkout3_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\GIT_LVDSClock_XC7K325T_2FFG676\ipcore_dir\clkGenerator.v" Line 138: Assignment to clkout3b_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\GIT_LVDSClock_XC7K325T_2FFG676\ipcore_dir\clkGenerator.v" Line 139: Assignment to clkout4_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\GIT_LVDSClock_XC7K325T_2FFG676\ipcore_dir\clkGenerator.v" Line 140: Assignment to clkout5_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\GIT_LVDSClock_XC7K325T_2FFG676\ipcore_dir\clkGenerator.v" Line 141: Assignment to clkout6_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\GIT_LVDSClock_XC7K325T_2FFG676\ipcore_dir\clkGenerator.v" Line 153: Assignment to do_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\GIT_LVDSClock_XC7K325T_2FFG676\ipcore_dir\clkGenerator.v" Line 154: Assignment to drdy_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\GIT_LVDSClock_XC7K325T_2FFG676\ipcore_dir\clkGenerator.v" Line 160: Assignment to psdone_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\GIT_LVDSClock_XC7K325T_2FFG676\ipcore_dir\clkGenerator.v" Line 163: Assignment to clkinstopped_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\GIT_LVDSClock_XC7K325T_2FFG676\ipcore_dir\clkGenerator.v" Line 164: Assignment to clkfbstopped_unused ignored, since the identifier is never used
+
+Elaborating module <BUFG>.
+WARNING:HDLCompiler:1127 - "F:\GIT_LVDSClock_XC7K325T_2FFG676\src\TestLVDSTop.v" Line 45: Assignment to clk65P472 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\GIT_LVDSClock_XC7K325T_2FFG676\src\TestLVDSTop.v" Line 48: Assignment to LOCKED ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "F:\GIT_LVDSClock_XC7K325T_2FFG676\src\TestLVDSTop.v" Line 65: Result of 27-bit expression is truncated to fit in 26-bit target.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <TestLVDSTop>.
-    Related source file is "F:\codetemp\TestLVDSClock_676\src\TestLVDSTop.v".
-    Found 16-bit register for signal <cnt>.
+    Related source file is "F:\GIT_LVDSClock_XC7K325T_2FFG676\src\TestLVDSTop.v".
+INFO:Xst:3210 - "F:\GIT_LVDSClock_XC7K325T_2FFG676\src\TestLVDSTop.v" line 40: Output port <CLK_OUT2> of the instance <clk_gen_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\GIT_LVDSClock_XC7K325T_2FFG676\src\TestLVDSTop.v" line 40: Output port <LOCKED> of the instance <clk_gen_inst> is unconnected or connected to loadless signal.
+    Found 26-bit register for signal <cnt>.
     Found 1-bit register for signal <led_h>.
-    Found 16-bit adder for signal <cnt[15]_GND_1_o_add_1_OUT> created at line 50.
+    Found 26-bit adder for signal <cnt[25]_GND_1_o_add_1_OUT> created at line 65.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred  17 D-type flip-flop(s).
+	inferred  27 D-type flip-flop(s).
 	inferred   1 Multiplexer(s).
 Unit <TestLVDSTop> synthesized.
+
+Synthesizing Unit <clkGenerator>.
+    Related source file is "F:\GIT_LVDSClock_XC7K325T_2FFG676\ipcore_dir\clkGenerator.v".
+    Summary:
+	no macro.
+Unit <clkGenerator> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
 # Adders/Subtractors                                   : 1
- 16-bit adder                                          : 1
+ 26-bit adder                                          : 1
 # Registers                                            : 2
  1-bit register                                        : 1
- 16-bit register                                       : 1
+ 26-bit register                                       : 1
 # Multiplexers                                         : 1
- 16-bit 2-to-1 multiplexer                             : 1
+ 26-bit 2-to-1 multiplexer                             : 1
 
 =========================================================================
 
@@ -160,7 +196,7 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # Counters                                             : 1
- 16-bit up counter                                     : 1
+ 26-bit up counter                                     : 1
 # Registers                                            : 1
  Flip-Flops                                            : 1
 
@@ -171,8 +207,8 @@ Macro Statistics
 =========================================================================
 
 Optimizing unit <TestLVDSTop> ...
-WARNING:Xst:1293 - FF/Latch <cnt_14> has a constant value of 0 in block <TestLVDSTop>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <cnt_15> has a constant value of 0 in block <TestLVDSTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cnt_24> has a constant value of 0 in block <TestLVDSTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cnt_25> has a constant value of 0 in block <TestLVDSTop>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -184,8 +220,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 15
- Flip-Flops                                            : 15
+# Registers                                            : 25
+ Flip-Flops                                            : 25
 
 =========================================================================
 
@@ -208,22 +244,26 @@ Top Level Output File Name         : TestLVDSTop.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 61
+# BELS                             : 103
 #      GND                         : 1
 #      INV                         : 2
-#      LUT1                        : 13
-#      LUT5                        : 15
-#      LUT6                        : 2
-#      MUXCY                       : 13
+#      LUT1                        : 23
+#      LUT5                        : 25
+#      LUT6                        : 4
+#      MUXCY                       : 23
 #      VCC                         : 1
-#      XORCY                       : 14
-# FlipFlops/Latches                : 15
-#      FDC                         : 14
+#      XORCY                       : 24
+# FlipFlops/Latches                : 25
+#      FDC                         : 24
 #      FDE                         : 1
+# Clock Buffers                    : 3
+#      BUFG                        : 3
 # IO Buffers                       : 3
 #      IBUF                        : 1
 #      IBUFGDS                     : 1
 #      OBUF                        : 1
+# Others                           : 1
+#      MMCME2_ADV                  : 1
 
 Device utilization summary:
 ---------------------------
@@ -232,15 +272,15 @@ Selected Device : 7k325tfbg676-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              15  out of  407600     0%  
- Number of Slice LUTs:                   32  out of  203800     0%  
-    Number used as Logic:                32  out of  203800     0%  
+ Number of Slice Registers:              25  out of  407600     0%  
+ Number of Slice LUTs:                   54  out of  203800     0%  
+    Number used as Logic:                54  out of  203800     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     32
-   Number with an unused Flip Flop:      17  out of     32    53%  
-   Number with an unused LUT:             0  out of     32     0%  
-   Number of fully used LUT-FF pairs:    15  out of     32    46%  
+ Number of LUT Flip Flop pairs used:     54
+   Number with an unused Flip Flop:      29  out of     54    53%  
+   Number with an unused LUT:             0  out of     54     0%  
+   Number of fully used LUT-FF pairs:    25  out of     54    46%  
    Number of unique control sets:         2
 
 IO Utilization: 
@@ -248,6 +288,7 @@ IO Utilization:
  Number of bonded IOBs:                   4  out of    400     1%  
 
 Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                3  out of     32     9%  
 
 ---------------------------
 Partition Resource Summary:
@@ -270,7 +311,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk_p                              | IBUFGDS                | 15    |
+clk_gen_inst/clkout0               | BUFG                   | 25    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -281,31 +322,31 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 1.768ns (Maximum Frequency: 565.739MHz)
-   Minimum input arrival time before clock: 1.074ns
+   Minimum period: 1.824ns (Maximum Frequency: 548.126MHz)
+   Minimum input arrival time before clock: 1.125ns
    Maximum output required time after clock: 0.580ns
-   Maximum combinational path delay: No path found
+   Maximum combinational path delay: 0.862ns
 
 Timing Details:
 ---------------
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'clk_p'
-  Clock period: 1.768ns (frequency: 565.739MHz)
-  Total number of paths / destination ports: 316 / 16
+Timing constraint: Default period analysis for Clock 'clk_gen_inst/clkout0'
+  Clock period: 1.824ns (frequency: 548.126MHz)
+  Total number of paths / destination ports: 901 / 26
 -------------------------------------------------------------------------
-Delay:               1.768ns (Levels of Logic = 16)
+Delay:               1.824ns (Levels of Logic = 26)
   Source:            cnt_0 (FF)
-  Destination:       cnt_13 (FF)
-  Source Clock:      clk_p rising
-  Destination Clock: clk_p rising
+  Destination:       cnt_23 (FF)
+  Source Clock:      clk_gen_inst/clkout0 rising
+  Destination Clock: clk_gen_inst/clkout0 rising
 
-  Data Path: cnt_0 to cnt_13
+  Data Path: cnt_0 to cnt_23
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             16   0.236   0.422  cnt_0 (cnt_0)
+     FDC:C->Q              2   0.236   0.344  cnt_0 (cnt_0)
      INV:I->O              1   0.054   0.000  Mcount_cnt_lut<0>_INV_0 (Mcount_cnt_lut<0>)
      MUXCY:S->O            1   0.238   0.000  Mcount_cnt_cy<0> (Mcount_cnt_cy<0>)
      MUXCY:CI->O           1   0.013   0.000  Mcount_cnt_cy<1> (Mcount_cnt_cy<1>)
@@ -319,42 +360,52 @@ Delay:               1.768ns (Levels of Logic = 16)
      MUXCY:CI->O           1   0.013   0.000  Mcount_cnt_cy<9> (Mcount_cnt_cy<9>)
      MUXCY:CI->O           1   0.013   0.000  Mcount_cnt_cy<10> (Mcount_cnt_cy<10>)
      MUXCY:CI->O           1   0.013   0.000  Mcount_cnt_cy<11> (Mcount_cnt_cy<11>)
-     MUXCY:CI->O           0   0.013   0.000  Mcount_cnt_cy<12> (Mcount_cnt_cy<12>)
-     XORCY:CI->O           1   0.262   0.350  Mcount_cnt_xor<13> (Result<13>)
-     LUT5:I4->O            1   0.043   0.000  Mcount_cnt_eqn_131 (Mcount_cnt_eqn_13)
-     FDC:D                    -0.000          cnt_13
+     MUXCY:CI->O           1   0.013   0.000  Mcount_cnt_cy<12> (Mcount_cnt_cy<12>)
+     MUXCY:CI->O           1   0.013   0.000  Mcount_cnt_cy<13> (Mcount_cnt_cy<13>)
+     MUXCY:CI->O           1   0.013   0.000  Mcount_cnt_cy<14> (Mcount_cnt_cy<14>)
+     MUXCY:CI->O           1   0.013   0.000  Mcount_cnt_cy<15> (Mcount_cnt_cy<15>)
+     MUXCY:CI->O           1   0.013   0.000  Mcount_cnt_cy<16> (Mcount_cnt_cy<16>)
+     MUXCY:CI->O           1   0.013   0.000  Mcount_cnt_cy<17> (Mcount_cnt_cy<17>)
+     MUXCY:CI->O           1   0.013   0.000  Mcount_cnt_cy<18> (Mcount_cnt_cy<18>)
+     MUXCY:CI->O           1   0.013   0.000  Mcount_cnt_cy<19> (Mcount_cnt_cy<19>)
+     MUXCY:CI->O           1   0.013   0.000  Mcount_cnt_cy<20> (Mcount_cnt_cy<20>)
+     MUXCY:CI->O           1   0.013   0.000  Mcount_cnt_cy<21> (Mcount_cnt_cy<21>)
+     MUXCY:CI->O           0   0.013   0.000  Mcount_cnt_cy<22> (Mcount_cnt_cy<22>)
+     XORCY:CI->O           1   0.262   0.350  Mcount_cnt_xor<23> (Result<23>)
+     LUT5:I4->O            1   0.043   0.000  Mcount_cnt_eqn_231 (Mcount_cnt_eqn_23)
+     FDC:D                    -0.000          cnt_23
     ----------------------------------------
-    Total                      1.768ns (0.995ns logic, 0.773ns route)
-                                       (56.3% logic, 43.7% route)
+    Total                      1.824ns (1.130ns logic, 0.694ns route)
+                                       (61.9% logic, 38.1% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_p'
-  Total number of paths / destination ports: 15 / 15
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_gen_inst/clkout0'
+  Total number of paths / destination ports: 25 / 25
 -------------------------------------------------------------------------
-Offset:              1.074ns (Levels of Logic = 2)
+Offset:              1.125ns (Levels of Logic = 2)
   Source:            rst_n (PAD)
   Destination:       cnt_0 (FF)
-  Destination Clock: clk_p rising
+  Destination Clock: clk_gen_inst/clkout0 rising
 
   Data Path: rst_n to cnt_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             2   0.000   0.344  rst_n_IBUF (rst_n_IBUF)
-     INV:I->O             14   0.054   0.411  rst_n_inv1_INV_0 (rst_n_inv)
+     INV:I->O             24   0.054   0.463  rst_n_inv1_INV_0 (rst_n_inv)
      FDC:CLR                   0.264          cnt_0
     ----------------------------------------
-    Total                      1.074ns (0.318ns logic, 0.756ns route)
-                                       (29.6% logic, 70.4% route)
+    Total                      1.125ns (0.318ns logic, 0.808ns route)
+                                       (28.3% logic, 71.7% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_p'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_gen_inst/clkout0'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Offset:              0.580ns (Levels of Logic = 1)
   Source:            led_o_r (FF)
   Destination:       led_h (PAD)
-  Source Clock:      clk_p rising
+  Source Clock:      clk_gen_inst/clkout0 rising
 
   Data Path: led_o_r to led_h
                                 Gate     Net
@@ -367,29 +418,48 @@ Offset:              0.580ns (Levels of Logic = 1)
                                        (40.7% logic, 59.3% route)
 
 =========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Delay:               0.862ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       clk_gen_inst/mmcm_adv_inst:RST (PAD)
+
+  Data Path: rst_n to clk_gen_inst/mmcm_adv_inst:RST
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.000   0.344  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O             24   0.054   0.463  rst_n_inv1_INV_0 (rst_n_inv)
+    MMCME2_ADV:RST             0.000          clk_gen_inst/mmcm_adv_inst
+    ----------------------------------------
+    Total                      0.862ns (0.054ns logic, 0.808ns route)
+                                       (6.3% logic, 93.7% route)
+
+=========================================================================
 
 Cross Clock Domains Report:
 --------------------------
 
-Clock to Setup on destination clock clk_p
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk_p          |    1.768|         |         |         |
----------------+---------+---------+---------+---------+
+Clock to Setup on destination clock clk_gen_inst/clkout0
+--------------------+---------+---------+---------+---------+
+                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------+---------+---------+---------+---------+
+clk_gen_inst/clkout0|    1.824|         |         |         |
+--------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 35.00 secs
-Total CPU time to Xst completion: 35.76 secs
+Total REAL time to Xst completion: 18.00 secs
+Total CPU time to Xst completion: 18.17 secs
  
 --> 
 
-Total memory usage is 452740 kilobytes
+Total memory usage is 422084 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    3 (   0 filtered)
-Number of infos    :    0 (   0 filtered)
+Number of warnings :   20 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
 

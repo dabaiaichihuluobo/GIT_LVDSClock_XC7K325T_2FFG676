@@ -2,10 +2,10 @@ Release 14.7 ngdbuild P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 Command Line: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
--intstyle ise -dd _ngo -nt timestamp -uc TestLVDSTop.ucf -p xc7k325t-fbg676-2
-TestLVDSTop.ngc TestLVDSTop.ngd
+-intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc TestLVDSTop.ucf -p
+xc7k325t-fbg676-2 TestLVDSTop.ngc TestLVDSTop.ngd
 
-Reading NGO file "F:/codetemp/TestLVDSClock_676/TestLVDSTop.ngc" ...
+Reading NGO file "F:/GIT_LVDSClock_XC7K325T_2FFG676/TestLVDSTop.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
@@ -27,10 +27,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 207792 kilobytes
+Total memory usage is 208496 kilobytes
 
 Writing NGD file "TestLVDSTop.ngd" ...
-Total REAL time to NGDBUILD completion:  13 sec
-Total CPU time to NGDBUILD completion:   10 sec
+Total REAL time to NGDBUILD completion:  9 sec
+Total CPU time to NGDBUILD completion:   8 sec
 
 Writing NGDBUILD log file "TestLVDSTop.bld"...
